@@ -1,4 +1,6 @@
 import Person from './modules/Player.js';
+import Map from './modules/Map.js';
+
 import {
     rand,
     names,
@@ -8,6 +10,7 @@ import {
 
 let enemy;
 let player;
+// const player = new Person(names[rand(0, names.length - 1)], roles[rand(0, roles.length - 1)]);
 let bot_move_def = false;
 
 function chat_update(subject, action) {
@@ -198,4 +201,8 @@ window.onload = () => {
     document.querySelector('#hide-btn').onclick = () => {
         move('hide', real_player_name);
     };
+
+    const map = new Map;
+
+    map.insert('#map table');
 }

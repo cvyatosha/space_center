@@ -284,3 +284,10 @@ footer p {
     text-align: center;
     font-size: 32rem;
 }
+
+
+.room{
+    width: 35px;
+    height: 27px;
+    background: red;
+}
